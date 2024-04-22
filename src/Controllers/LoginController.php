@@ -21,7 +21,7 @@ class LoginController
     {
         $error = $this->flash->getMessage('error');
 
-        $this->template->render('login.tpl', [
+        $this->template->render('login', [
             'error' => $error[0] ?? null,
         ]);
         return $response;

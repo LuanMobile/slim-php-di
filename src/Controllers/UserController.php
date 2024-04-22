@@ -25,7 +25,7 @@ class UserController
     {
         $users = $this->container->get(User::class)->users();
 
-        $this->template->render('users.tpl', ['users' => $users]);
+        $this->template->render('users', ['users' => $users]);
 
         return $response;
     }
